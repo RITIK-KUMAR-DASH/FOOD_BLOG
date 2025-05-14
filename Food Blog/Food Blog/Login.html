@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in-MasterChef</title>
+    <style>
+    body {
+        background-color:rgb(42, 226, 29);
+        padding: 200px;
+    }
+    .form-container 
+    {background-color: aliceblue;
+        border-radius: 20px;
+        padding: 120px;
+        box-shadow: 0 0 10px black;
+        max-width: 520px;
+        margin: 15%;
+        background-position: center;
+        
+                   
+    }       
+    .form-label 
+    {
+        display: flex;
+        clear: both;
+        text-align: left;
+    }
+    .form-input 
+    {
+        width: 72%;
+        padding: 10px 5px;
+        border:3px solid rgb(52, 201, 74);
+        border-radius: 5px;
+        font-size: 16px;
+        color: burlywood;
+        margin-top: 10px;
+        
+    }
+    .form-select
+    {
+        width: 100%;
+        padding: 10px;
+        border: 3px solid rgb(40, 165, 63);
+        border-radius: 5px;
+        font-size: 16px;
+        color: blueviolet;
+        
+    }
+    .button 
+    {
+        background-color:rgb(13, 255, 0);
+        color:rgb(2, 2, 2);
+        text-align:center;
+        border: black;
+        border-radius: 6px;
+        margin-top: 10px;
+        padding: 10px; 
+        font-size: 18px;
+        width: 100%;
+        cursor:pointer;            
+    }
+    .button:hover
+     {
+        background-color:rgb(28, 123, 7);
+    }
+    .image
+    {
+        text-align: center;
+        border-radius: 15px;
+        padding: 20px;
+        height: 90px;
+    }
+    #h2
+    {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container" style="width: 69%;">
+        <div class="image">
+        <img src="masterchef-high-resolution-logo.png" alt="Logo" class="image">
+        </div>
+        <h1 id="h2">Log-in</h1>
+        <form>
+    <div class="form-group">
+        <label for="name" >UserName </label>
+        <input type="text" id="name" class="form-input" placeholder="Enter Name.." required><br>
+        <label for="email" >Email</label>
+        <input type="email" id="email" class="form-input" placeholder="Enter email..." required><br>
+        <label for="mobile" >Mobile</label>
+        <input type="mobile" id="mobile" class="form-input" placeholder="Enter Mobile No..." required><br><br>
+    </div >
+    <button type="submit" class="button" >Sign Up</button>
+</form>
+    </div>
+</body>
+</html>

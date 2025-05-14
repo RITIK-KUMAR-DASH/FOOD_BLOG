@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - Food Blog | Front-end Development Course at Nordic Coder School</title>
+    <!-- ipfs test --> 
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176427515-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176427515-1');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>Contact us - Food Blog | HTML5 & CSS3 Course</title>
+    <meta name="title" content="Contact us - Food Blog | HTML5 & CSS3 Course">
+    <meta name="description"
+        content="Contact us if you have any questions about menus, recipes or simply want to update new dishes. The Food Blog team is pleased to serve you!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://food-blog.vercel.app/contact.html">
+    <meta property="og:title" content="Contact us - Food Blog | HTML5 & CSS3 Course">
+    <meta property="og:description"
+        content="Contact us if you have any questions about menus, recipes or simply want to update new dishes. The Food Blog team is pleased to serve you!">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+    <meta property="og:image:alt" content="Contact us - Food Blog thumbnail">
+    <meta property="fb:app_id" content="312288953554749">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url"
+        content="https://food-blog.vercel.app/contact.html">
+    <meta property="twitter:title" content="Contact us - Food Blog | HTML5 & CSS3 Course">
+    <meta property="twitter:description"
+        content="Contact us if you have any questions about menus, recipes or simply want to update new dishes. The Food Blog team is pleased to serve you!">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4a9d18e4fd.js" crossorigin="anonymous"></script>
+<style>/*********************** Homepage **********************/
+
+    /* Hero Section */
+    .hero {
+        background-image: url(https://infifashion.com/wp-content/uploads/2022/06/thumbnail-3-1024x683.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    .hero__container {
+        display: flex;
+        background-image: url("https://apps.odishatourism.gov.in/Application/uploadDocuments/pages/images/Featured20190306_164421.jpg");
+        background-size: cover;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+    
+    .hero__content span{
+        display: inline-block;
+        padding: 0 20px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    
+        color: #ffffff;
+    
+        box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hero__content h1 span{
+        background-color: #12e227;
+        font-size: 36px;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .hero__content h1 span{
+            font-size: 72px;
+        }
+    }
+    
+    .hero__content h2 span {
+        position: relative;
+        z-index: 1;
+        padding: 0 20px;
+    
+        background-color: #fdc856;
+    
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .hero__content h2 span {
+            padding: 0 25px;
+            font-size: 48px;
+        }
+    }
+    
+    .hero__content h3 span {
+        background-color: #bdde64;
+    
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .hero__content h3 span {
+            font-size: 36px;
+        }
+    }
+    
+    .hero__content > h1 {
+        animation: rotateZoom 1s ease-out both;
+    }
+    
+    .hero__content > h2 {
+        animation: animate 1s ease-out 0.5s both;
+    }
+    
+    .hero__content > h3 {
+        animation: animate 1s ease-out 1s both;
+    }
+    
+    @keyframes rotateZoom {
+        from {
+            opacity: 0;
+            transform: scale(0, 0);
+        }
+    
+        1% {
+            opacity: 0;
+            transform: rotate(5deg) scale(0.1, 0.1);
+        }
+    
+        to {
+            opacity: 1;
+            transform: rotate(5deg) scale(1, 1);
+        }
+    }
+    
+    @keyframes animate {
+        from {
+            opacity: 0;
+            transform: scale(0, 0);
+        }
+    
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+    
+    /********** Recipes-rating section start **********/
+    
+    /***** Top rated recipes column, Most liked recipes *****/
+    
+    .recipes-rating {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+        background-color: #1472ec;
+    }
+    
+    .recipes-rating__col {
+        padding-top: 20px;
+    }
+    
+    h2.recipes-rating__title {
+        position: relative;
+        margin-bottom: 30px;
+    
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    h2.recipes-rating__title::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+    
+        width: 50px;
+        height: 6px;
+        margin-bottom: 10px;
+    
+        background-color: #12e227;
+    }
+    
+    h2.recipes-rating__title::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 50px;
+    
+        width: 0;
+        border-width: 3px;
+        border-style: solid;
+        border-color: #12e227 transparent transparent #12e227;
+    }
+    
+    ul.recipes-rating__top > li,
+    ul.recipes-rating__liked > li {
+        padding-bottom: 15px;
+    }
+    
+    .recipes-rating__list-items {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    
+    .recipes-rating__image img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .recipes-rating__info {
+        padding-left: 15px;
+    }
+    
+    .recipes-rating__date {
+        color: #12e227;
+    
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .recipes-rating__name {
+        color: #474747;
+        font-size: 16px;
+    }
+    
+    ul.recipes-rating__stars {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 10px;
+    }
+    
+    ul.recipes-rating__stars > li {
+        padding-right: 3px;
+    }
+    
+    .recipes-rating__stars i {
+        color: #fbb710;
+        font-size: 11px;
+    }
+    
+    .recipes-rating__stars > li:last-child i {
+        color: #e0e3e4;
+    }
+    
+    /***** Blog recipes rating *****/
+    
+    .recipes-rating__blog {
+        position: relative;
+        margin-top: 30px;
+        background-color: #fff;
+    
+        box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
+    }
+    
+    .recipes-rating__blog-image {
+        position: relative;
+    }
+    
+    .recipes-rating__blog-image::before {
+        content: "May 04, 2018";
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        width: 140px;
+        height: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #12e227;
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .recipes-rating__blog-image::after {
+        content: "";
+        position: absolute;
+        left: 140px;
+        top: 0;
+    
+        width: 0;
+        border-width: 25px 15px;
+        border-style: solid;
+        border-color: #12e227 transparent transparent #12e227;
+    }
+    
+    .recipes-rating__blog-image img {
+        width: 100%;
+    }
+    
+    .recipes-rating__content {
+        padding: 40px;
+    }
+    
+    .recipes-rating__heading {
+        color: #474747;
+        font-size: 18px;
+    }
+    
+    .recipes-rating__author {
+        padding-top: 10px;
+        padding-bottom: 25px;
+        color: #12e227;
+        font-weight: 500;
+    }
+    
+    .recipes-rating__description {
+        line-height: 2;
+    }
+    
+    .recipes-rating__comments {
+        padding-top: 20px;
+        color: #474747;
+        font-size: 12px;
+    }
+    
+    .recipes-rating__icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #12e227;
+    }
+    
+    .recipes-rating__icon i {
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    /**************** Testimonials section start *************/
+    
+    .testimonials {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #fdc856;
+    }
+    
+    .testimonials__container {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .testimonials__container {
+            max-width: 480px;
+        }
+    }
+    
+    /* Laptop */
+    @media only screen and (min-width: 992px) {
+        .testimonials__container {
+            max-width: 1140px;
+        }
+    }
+    
+    .testimonials [class^="col"] {
+        padding: 15px;
+    }
+    
+    .testimonials__bg {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+        background-color: #e44c4c;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .testimonials__bg {
+            flex-flow: row nowrap;
+            padding: 0;
+        }
+    }
+    
+    .testimonials__image {
+        position: relative;
+        width: 50%;
+    }
+    
+    .testimonials__image::before {
+        content: "May 04, 2018";
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        width: 90px;
+        height: 35px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    
+        background-color: #12e227;
+        color: #ffffff;
+        font-size: 12px;
+    }
+    
+    .testimonials__image::after {
+        content: "";
+        position: absolute;
+        left: 90px;
+        top: 0;
+    
+        width: 0;
+        border-width: 18px 10px;
+        border-style: solid;
+        border-color: #12e227 transparent transparent #12e227;
+    }
+    
+    .testimonials__image img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    .testimonials__content {
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .testimonials__image {
+            width: 33.333333%;
+        }
+    
+        .testimonials__content {
+            width: 66.666667%;
+            padding-left: 30px;
+            text-align: left;
+        }
+    }
+    
+    /* Laptop */
+    @media only screen and (min-width: 992px) {
+        .testimonials__content {
+            padding-top: 0;
+        }
+    }
+    
+    .testimonials__date {
+        color: #12e227;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .testimonials__title {
+        color: #474747;
+        font-size: 16px;
+    }
+    
+    ul.testimonials__rating {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        ul.testimonials__rating {
+            justify-content: flex-start;
+        }
+    }
+    
+    ul.testimonials__rating > li {
+        padding-right: 3px;
+    }
+    
+    ul.testimonials__rating i {
+        color: #fbb710;
+        font-size: 11px;
+    }
+    
+    ul.testimonials__rating > li:last-child i {
+        color: #e0e3e4;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .testimonials__author {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+    
+    .testimonials__avatar {
+        width: 20%;
+        border-radius: 50%;
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 768px) {
+        .testimonials__avatar {
+            width: 10%;
+        }
+    }
+    
+    .testimonials__name {
+        align-self: center;
+        padding-left: 15px;
+    }
+    /****************** SECTION FOOTER *****************/
+
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+}
+
+.app-footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer {
+        text-align: left;
+    }
+}
+
+/******** SOCIAL-LIST ********/
+ul.app-footer__social-list {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.app-footer__social-list {
+        justify-content: flex-start;
+    }
+}
+
+ul.app-footer__social-list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.app-footer__social-list > li {
+        padding-right: 30px;
+        padding-left: 0;
+    }
+}
+
+ul.app-footer__social-list a {
+    color: #000;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.app-footer__social-list a {
+        color: #b8b8b8;
+    }
+}
+
+ul.app-footer__social-list > li > a:hover {
+    color: #12e227;
+}
+
+/*********** MENU ***********/
+
+.app-footer__right {
+    margin-top: 12px;
+    padding-left: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__right {
+        padding-left: 0;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__right {
+        text-align: right;
+    }
+}
+
+.app-footer__menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__menu {
+        justify-content: flex-start;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__menu {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+}
+
+.app-footer__menu > li {
+    padding: 0 15px 10px 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__menu > li {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__menu > li {
+        padding: 0 0 10px 25px;
+    }
+}
+
+.app-footer__menu a {
+    color: #474747;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.app-footer__menu > li > a:hover,
+.app-footer__menu > li.active > a{
+    color: #12e227;
+}
+
+.app-footer__menu > li.active > a{
+    font-weight: 700;
+}
+
+/* Tablet */
+@media only screen and (min-width: 992px) {
+    .app-footer__right > p {
+        font-size: 13px;
+    }
+}
+
+.app-footer__right > p a {
+    color: #007bff;
+}
+
+.app-footer__right > p a:hover {
+    color: #0056b3;
+}
+
+/********** Scroll-to-top button ************/
+
+button#scrollButton {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: #12e227;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+button#scrollButton:hover {
+    opacity: 0.7;   
+}
+/**************** SECTION TOP-BAR ***************/
+
+.top-bar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #12e227;
+}
+
+/****** SOCIAL-LIST ******/
+
+ul.top-bar__social-list {
+    display: none;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    ul.top-bar__social-list {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+ul.top-bar__social-list > li {
+    padding-right: 40px;
+}
+
+ul.top-bar__social-list a {
+    color: #fff;
+    font-size: 15px;
+}
+
+/******** LINKS *********/
+
+.top-bar__links {
+    text-align: center;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-bar__links {
+        text-align: right;
+    }
+}
+
+.top-bar__links > a, 
+.top-bar__links > span {
+    color: #fff;
+    font-weight: 600;
+}
+
+/****************** SECTION TOP-NAV *******************/
+
+.top-nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.top-nav .row {
+    position: relative;
+    flex-flow: row nowrap;
+}
+
+/******** LOGO ********/
+
+.top-nav__logo {
+    height: 36px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__logo {
+        height: 48px;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__logo {
+        height: 64px;
+    }
+}
+
+/************ MENU ***********/
+
+.top-nav__toggle {
+    position: relative;
+    width: 40px;
+    height: 37px;
+    border: 1px solid #ddd;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav .row > div:nth-child(4) {
+        display: none;
+    }
+}
+
+.top-nav__toggle-bars {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 3px;
+    margin-left: 25px;
+}
+
+.top-nav__toggle-bar {
+    width: 25px;
+    height: 3px;
+    padding-right: 15px;
+    border-radius: 16px;
+    margin-top: 5px;
+    margin-right: 25px;
+    background-color: #000;
+}
+
+.top-nav__menu {
+    display: none;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 13px;
+        
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__menu {
+        padding-top: 21px;
+        padding-left: 24px;
+    }
+}
+
+.top-nav__menu > li {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__menu > li {
+        padding-left: 28px;
+        padding-top: 0;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__menu > li {
+        padding-right: 15px;
+        margin-right: 25px;
+    }
+}
+
+.top-nav__menu a {
+    color: #474747;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-nav__menu > li a:hover, 
+.top-nav__menu > li.active a {
+    color: #12e227;
+}
+
+.top-nav__menu > li.active a {
+    font-weight: 700;
+}
+
+/******* SEARCH BUTTON  ********/
+
+.top-nav__search {
+    margin-right: 15px;
+    text-align: right;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__search {
+        margin-right: 25px;
+        padding-top: 6px;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__search {
+        padding-top: 12px;
+    }
+}
+
+.top-nav__search > button {
+    border-radius: 4px;
+    border: none;
+    padding: 11px 8px 9px 10px;
+    background-color: #12e227;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-nav__search i {
+    font-size: 16px;
+}
+
+/********** MENU TOGGLE **********/
+
+.top-nav__toggle-bar.hide-bar {
+    visibility: hidden;
+}
+
+.top-nav__toggle-bar.rotate-bar-top, 
+.top-nav__toggle-bar.rotate-bar-bottom {
+    width: 30px;
+    transition: all .35s;
+}
+
+.top-nav__toggle-bar.rotate-bar-top {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.top-nav__toggle-bar.rotate-bar-bottom {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+ul.top-nav__menu-toggle {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 100;
+
+    width: 100%;
+    max-height: 0;
+    background-color: #fff;
+
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+ul.top-nav__menu-toggle.show-menu {
+    max-height: 250px;
+}
+
+ul.top-nav__menu-toggle > li {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-top: 1px solid #ededed;
+}
+
+ul.top-nav__menu-toggle a {
+    display: block;
+    color: #474747;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul.top-nav__menu-toggle > li.active a {
+    color: #12e227;
+    font-weight: 700;
+}
+
+/* ul.top-nav__menu-toggle a:hover {
+    color: #ff2a6b;
+} *//**************** Reset CSS *****************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #838383;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+p {
+    color: #838383;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+}
+
+a:hover {
+    opacity: 0.8;
+}/***************** SECTION HERO *********************/
+
+.hero {
+    height: 767px;
+
+    background-image: url(../images/recipes/single-big.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/********** Recipe detail section ***********/
+.recipe-detail {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.recipe-detail__header {
+    padding-bottom: 50px;
+}
+
+.recipe-detail__heading {
+    position: relative;
+
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.recipe-detail__heading::before {
+    content: "For Begginers";
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+
+    background-color: #12e227;
+
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.recipe-detail__heading::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 150px;
+
+    width: 0;
+    border-width: 25px 15px;
+    border-style: solid;
+    border-color: #12e227 transparent transparent #12e227;
+}
+
+.recipe-detail__date {
+    color: #a4a4a4;
+}
+
+ul.recipe-detail__rating {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 25px;
+}
+
+ul.recipe-detail__rating > li {
+    padding-right: 3px;
+}
+
+ul.recipe-detail__rating i {
+    color: #fbb710;
+}
+
+ul.recipe-detail__rating > li:last-child i {
+    color: #e0e3e4;
+}
+
+.recipe-detail__box {
+    position: relative;
+    padding: 50px 35px 50px 50px;
+    background-color: #eff3f7;
+}
+
+.recipe-detail__title {
+    padding-top: 120px;
+}
+
+.recipe-detail__summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 20px 118px 20px 50px;
+    background-color: #12e227;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .recipe-detail__summary {
+        padding: 20px 400px 20px 50px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .recipe-detail__summary {
+        padding: 20px 170px 20px 50px;
+    }
+}
+
+.recipe-detail__summary::after {
+    content: "";
+    position: absolute;
+    right: -58px;
+    top: 0;
+
+    width: 0;
+    border-width: 62px 29px;
+    border-style: solid;
+    border-color: #12e227 transparent transparent #12e227;
+}
+
+.recipe-detail__summary p {
+    color: #ffffff;
+}
+
+/*********** Recipe-detail check-box-list **********/
+
+ul.recipe-detail__check-box-list > li {
+    position: relative;
+    padding-top: 35px;
+}
+
+ul.recipe-detail__check-box-list input[type="checkbox"] {
+    position: absolute;
+    padding: 30px;
+    visibility: hidden;
+}
+
+ul.recipe-detail__check-box-list label.square {
+    display: inline-block;
+    padding-left: 50px;
+    color: #212529;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+ul.recipe-detail__check-box-list label.square::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaaaaa;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+
+ul.recipe-detail__check-box-list label.square::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 9px;
+
+    width: 7px;
+    height: 15px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #fff;
+
+    visibility: hidden;
+    transform: rotate(45deg);
+}
+
+.recipe-detail__check-box input[type="checkbox"]:checked + label.square::before {
+    border-color: transparent;
+    background-color: #12e227;
+}
+
+.recipe-detail__check-box input[type="checkbox"]:checked + label.square::after {
+    visibility: visible;
+}
+
+/************* Recipe-detail content *************/
+
+.recipe-detail__content {
+    padding-top: 50px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .recipe-detail__content {
+        padding-left: 15px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .recipe-detail__content {
+        padding-top: 0;
+    }
+}
+
+.recipe-detail__content > li {
+    padding-bottom: 50px;
+}
+
+.recipe-detail__item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.recipe-detail__description {
+    padding-top: 20px;
+    padding-left: 15px;
+    line-height: 2;
+}/********************* RECIPES-LIST PAGE *******************/
+
+.recipes-list {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.recipes-list [class^="col"] {
+    padding: 15px;
+}
+
+.recipes-list__title {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.recipes-list__title::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+
+    width: 50px;
+    height: 6px;
+    margin-bottom: 10px;
+
+    background-color: #12e227;
+}
+
+.recipes-list__title::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50px;
+
+    width: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #12e227 transparent transparent #12e227;
+}
+
+.recipes-list__item {
+    position: relative;
+}
+
+.recipes-list__item img {
+    width: 100%;
+}
+
+.recipes-list__info-background {
+    position: absolute;
+    bottom: 6px;
+
+    width: 78%;
+    background-color: #12e227;
+}
+
+.recipes-list__info-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -36px;
+
+    width: 0;   
+    border-width: 37px 18px;
+    border-style: solid;
+    border-color: #12e227 transparent transparent #12e227;
+}
+.recipes-list__info {
+    padding: 15px 25px;
+}
+
+.recipes-list__rating i {
+    color: #fbb710;
+    font-size: 10px;
+}
+
+.recipes-list__rating i:last-child {
+    color: #e0e3e4;
+}
+
+.recipes-list__pagination {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.recipes-list__pagination > * {
+    padding: 12px 15px;
+    margin-right: 10px;
+    
+    background-color: #cccccc;
+    color: #fff;
+
+    font-weight: bold;
+}
+
+.recipes-list__pagination > span {
+    background-color: #12e227;
+}/****************** CONTACT PAGE ******************/
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+/********** Contact Form ***********/
+
+.contact__form input,
+.contact__form textarea {
+    border: none;
+    padding: 0 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 50px;
+
+    background-color: #eff3f7;
+
+    font-size: 14px;
+    font-style: italic;
+    font-family: inherit;
+}
+
+h2.contact__title {
+    margin-bottom: 70px;
+    font-size: 24px;
+}
+
+textarea.contact__form-message {
+    padding: 30px;
+    height: 200px;
+    resize: vertical;
+}
+
+button.contact__form-btn {
+    border: none;
+    padding: 18px 60px;
+    
+    color: #fff;
+    background-color: #12e227;
+    
+    font-size: 14px;
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+/********* Contact Info ************/
+
+.contact__logo {
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .contact__logo {
+        padding-top: 0;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .contact__info {
+        padding-left: 100px;
+    }
+}
+
+ul.contact__info-list {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.contact__info-list {
+        flex-flow: row nowrap;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    ul.contact__info-list {
+        flex-flow: column nowrap;
+    }
+}
+
+ul.contact__info-list > li {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+ul.contact__info-list h3 {
+    display: inline-block;
+    border-bottom: 1px solid #12e227;
+    margin-bottom: 5px;
+    
+    color: #12e227;
+    font-weight: 500;
+    font-size: 16px;
+}
+ul.contact__info-list p {
+    color: #474747;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+ul.contact__info-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+ul.contact__info-social > li {
+    padding-right: 25px;
+}
+
+ul.contact__info-social a {
+    color: #474747;
+}
+
+ul.contact__info-social a:hover {
+    color: #12e227;
+}/********** SECTION HERO ***********/
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image: url(../images/page-top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    text-align: center;
+}
+
+.hero__title {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    background-color: #12e227;
+    color: #fff;
+
+    font-size: 48px;
+    font-weight: bold;
+
+    box-shadow: 0px 90px 100px rgba(0, 0, 0, 0.4);
+    animation: zoomIn 0.75s linear both;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__title {
+        font-size: 72px;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/************** SECTION ABOUT ***************/
+.about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.about__content {
+    padding-right: 20px;
+}
+
+.about__title {
+    margin-bottom: 65px;
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.about__description {
+    color: #838383;
+    line-height: 2.1;
+    font-size: 14.1px;
+}
+
+.about__link {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.about__link > a {
+    padding: 18px 40px;
+    background-color: #12e227;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.about__thumbnail {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/******************* SECTION FACTS *****************/
+.facts {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eff3f7;
+}
+
+ul.facts__list-items {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ul.facts__list-items > li {
+    width: 100%;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.facts__list-items > li {
+        width: 50%;
+        padding-bottom: 30px;
+    }
+}
+
+/* Laptop*/
+@media (min-width: 992px) {
+    ul.facts__list-items > li {
+        width: 25%;
+    }
+}
+
+.fact-item {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.fact-item__image {
+    margin-bottom: 20px;
+}
+
+.fact-item__big-number {
+    margin-bottom: 10px;
+    color: #474747;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.fact-item__name {
+    color: #474747;
+    font-size: 14px;
+    font-weight: 500;
+}</style>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animate Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Stylesheets  -->
+    <link rel="stylesheet" href="css/grid/container.css">
+    <link rel="stylesheet" href="css/grid/row.css">
+    <link rel="stylesheet" href="css/grid/col.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header>
+        <!-- Top-bar section start -->
+        <section class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="top-bar__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar__links">
+                            <a href="#">Register</a>
+                            <span>/</span>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Top-bar section end -->
+
+        <!-- Navigation section start -->
+        <nav class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-2 col-lg-2">
+                        <a href="index.html" class="top-nav___link-logo">
+                            <img class="top-nav__logo" src="./images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-9 col-lg-8">
+                        <ul class="top-nav__menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="active"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 col-md-1 col-lg-2">
+                        <div class="top-nav__search">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="top-nav__toggle" id="showMenu">
+                            <div class="top-nav__toggle-bars">
+                                <div class="top-nav__toggle-bar" id="barTop"></div>
+                                <div class="top-nav__toggle-bar" id="hideBar"></div>
+                                <div class="top-nav__toggle-bar" id="barBottom"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="top-nav__menu-toggle" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation section end -->
+    </header>
+    <!-- Header section end -->
+
+    <main>
+        <!-- Hero section start -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+            <h1 class="hero__title">Contact</h1>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- Contact section start -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0">
+                        <h2 class="contact__title">Leave a comment</h2>
+                        <form class="contact__form">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input required type="text" class="contact__form-name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input required type="email" class="contact__form-email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="contact__form-subject" placeholder="Subject">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea required class="contact__form-message" name="subject" id="subject"
+                                            cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button class="contact__form-btn">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200">
+                        <div class="contact__logo">
+                            <img src="./images/logo.svg" alt="">
+                        </div>
+                        <div class="contact__info">
+                            <ul class="contact__info-list">
+                                <li>
+                                    <h3>Address:</h3>
+                                    <p>ITER,SOA,Bhubaneswar</p>
+                                    <p>Odisha, 751030</p>
+                                </li>
+                                <li>
+                                    <h3>Phone:</h3>
+                                    <p>+91 7749038235</p>
+                                    <p>+91 9556765845</p>
+                                </li>
+                                <li>
+                                    <h3>Email:</h3>
+                                    <p>rkdash774@gmail.com</p>
+                                </li>
+                            </ul>
+
+                            <ul class="contact__info-social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section end -->
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+        <section class="app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="app-footer__logo-wrapper">
+                            <img src="images/logo.svg" alt="">
+                        </div>
+                        <ul class="app-footer__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app-footer__right">
+                            <ul class="app-footer__menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="active"><a href="#">Contact</a></li>
+                            </ul>
+                            <p>Copyright © 2023 All rights reserved | This template is made with <i
+                                    class="far fa-heart"></i> by <a href="#">MasterChef</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll-to-top button start -->
+    <div class="scroll-to-top">
+        <button id="scrollButton">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+    <!-- Scroll-to-top button end -->
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out',
+            duration: 600,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

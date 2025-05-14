@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page - Food Blog | Front-end Development Course at Nordic Coder School</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176427515-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176427515-1');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>About us - Food Blog | HTML5 & CSS3 Course</title>
+    <meta name="title" content="About us - Food Blog | HTML5 & CSS3 Course">
+    <meta name="description"
+        content="Food Blog has gone through a process of continuous formation and development to be where it is today. The Food Blog team is constantly updating new recipes to serve the needs of customers.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://food-blog.vercel.app/about.html">
+    <meta property="og:title" content="About us - Food Blog | HTML5 & CSS3 Course">
+    <meta property="og:description"
+        content="Food Blog has gone through a process of continuous formation and development to be where it is today. The Food Blog team is constantly updating new recipes to serve the needs of customers.">
+    <meta property="og:image" content="https://food-blog.vercel.app/images/about.jpg">
+    <meta property="og:image:alt" content="About us - Food Blog thumbnail">
+    <meta property="fb:app_id" content="312288953554749">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://food-blog.vercel.app/about.html">
+    <meta property="twitter:title" content="About us - Food Blog | HTML5 & CSS3 Course">
+    <meta property="twitter:description"
+        content="Food Blog has gone through a process of continuous formation and development to be where it is today. The Food Blog team is constantly updating new recipes to serve the needs of customers.">
+    <meta property="twitter:image" content="https://food-blog.vercel.app/images/about.jpg">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4a9d18e4fd.js" crossorigin="anonymous"></script>
+     <style>
+      /********** SECTION HERO ***********/
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image: url(../images/page-top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    text-align: center;
+}
+
+.hero__container{
+        display: flex;
+        background-image: url(https://apps.odishatourism.gov.in/Application/uploadDocuments/pages/images/Featured20190306_164421.jpg);
+        flex-flow: row nowrap;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+
+} .hero__content span{
+        display: inline-block;
+        padding: 0 20px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    
+        color: #ffffff;
+    
+        box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+.hero__content {
+        background-color: #12e227;
+        font-size: 36px;
+    }
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__title {
+        font-size: 72px;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/************** SECTION ABOUT ***************/
+.about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.about__content {
+    padding-right: 20px;
+}
+
+.about__title {
+    margin-bottom: 65px;
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.about__description {
+    color: #838383;
+    line-height: 2.1;
+    font-size: 14.1px;
+}
+
+.about__link {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.about__link > a {
+    padding: 18px 40px;
+    background-color: #16e70f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.about__thumbnail {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/******************* SECTION FACTS *****************/
+.facts {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eff3f7;
+}
+
+ul.facts__list-items {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ul.facts__list-items > li {
+    width: 100%;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.facts__list-items > li {
+        width: 50%;
+        padding-bottom: 30px;
+    }
+}
+
+/* Laptop*/
+@media (min-width: 992px) {
+    ul.facts__list-items > li {
+        width: 25%;
+    }
+}
+
+.fact-item {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.fact-item__image {
+    margin-bottom: 20px;
+}
+
+.fact-item__big-number {
+    margin-bottom: 10px;
+    color: #474747;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.fact-item__name {
+    color: #474747;
+    font-size: 14px;
+    font-weight: 500;
+}
+     </style>
+     <style>
+       
+       /**************** SECTION TOP-BAR ***************/
+
+.top-bar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #2ee61d;
+}
+
+/****** SOCIAL-LIST ******/
+
+ul.top-bar__social-list {
+    display: none;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    ul.top-bar__social-list {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+ul.top-bar__social-list > li {
+    padding-right: 40px;
+}
+
+ul.top-bar__social-list a {
+    color: #fff;
+    font-size: 15px;
+}
+
+/******** LINKS *********/
+
+.top-bar__links {
+    text-align: center;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-bar__links {
+        text-align: right;
+    }
+}
+
+.top-bar__links > a, 
+.top-bar__links > span {
+    color: #fff;
+    font-weight: 600;
+}
+
+/****************** SECTION TOP-NAV *******************/
+
+.top-nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.top-nav .row {
+    position: relative;
+    flex-flow: row nowrap;
+}
+
+/******** LOGO ********/
+
+.top-nav__logo {
+    height: 36px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__logo {
+        height: 48px;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__logo {
+        height: 64px;
+    }
+}
+
+/************ MENU ***********/
+
+.top-nav__toggle {
+    position: relative;
+    width: 40px;
+    height: 37px;
+    border: 1px solid #ddd;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav .row > div:nth-child(4) {
+        display: none;
+    }
+}
+
+.top-nav__toggle-bars {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.top-nav__toggle-bar {
+    width: 25px;
+    height: 3px;
+    border-radius: 16px;
+    margin-top: 5px;
+    background-color: #000;
+}
+
+.top-nav__menu {
+    display: none;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 13px;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__menu {
+        padding-top: 21px;
+    }
+}
+
+.top-nav__menu > li {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__menu > li {
+        padding-left: 28px;
+        padding-top: 0;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__menu > li {
+        padding-right: 15px;
+    }
+}
+
+.top-nav__menu a {
+    color: #474747;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-nav__menu > li a:hover, 
+.top-nav__menu > li.active a {
+    color: #2dec1b;
+}
+
+.top-nav__menu > li.active a {
+    font-weight: 700;
+}
+
+/******* SEARCH BUTTON  ********/
+
+.top-nav__search {
+    margin-right: -15px;
+    text-align: right;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .top-nav__search {
+        margin-right: 0;
+        padding-top: 6px;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 992px) {
+    .top-nav__search {
+        padding-top: 12px;
+    }
+}
+
+.top-nav__search > button {
+    border-radius: 4px;
+    border: none;
+    padding: 11px 8px 9px 10px;
+    background-color: #57eb13;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-nav__search i {
+    font-size: 16px;
+}
+
+/********** MENU TOGGLE **********/
+
+.top-nav__toggle-bar.hide-bar {
+    visibility: hidden;
+}
+
+.top-nav__toggle-bar.rotate-bar-top, 
+.top-nav__toggle-bar.rotate-bar-bottom {
+    width: 30px;
+    transition: all .35s;
+}
+
+.top-nav__toggle-bar.rotate-bar-top {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.top-nav__toggle-bar.rotate-bar-bottom {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+ul.top-nav__menu-toggle {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 100;
+
+    width: 100%;
+    max-height: 0;
+    background-color: #fff;
+
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+ul.top-nav__menu-toggle.show-menu {
+    max-height: 250px;
+}
+
+ul.top-nav__menu-toggle > li {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-top: 1px solid #ededed;
+}
+
+ul.top-nav__menu-toggle a {
+    display: block;
+    color: #474747;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul.top-nav__menu-toggle > li.active a {
+    color: #2aff3c;
+    font-weight: 700;
+}
+
+/* ul.top-nav__menu-toggle a:hover {
+    color: #ff2a6b;
+} */
+
+     </style>
+     <style>
+
+     /****************** SECTION FOOTER *****************/
+
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+}
+
+.app-footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer {
+        text-align: left;
+    }
+}
+
+/******** SOCIAL-LIST ********/
+ul.app-footer__social-list {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.app-footer__social-list {
+        justify-content: flex-start;
+    }
+}
+
+ul.app-footer__social-list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.app-footer__social-list > li {
+        padding-right: 30px;
+        padding-left: 0;
+    }
+}
+
+ul.app-footer__social-list a {
+    color: #000;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.app-footer__social-list a {
+        color: #b8b8b8;
+    }
+}
+
+ul.app-footer__social-list > li > a:hover {
+    color: #2aff2a;
+}
+
+/*********** MENU ***********/
+
+.app-footer__right {
+    margin-top: 12px;
+    padding-left: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__right {
+        padding-left: 0;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__right {
+        text-align: right;
+    }
+}
+
+.app-footer__menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__menu {
+        justify-content: flex-start;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__menu {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+}
+
+.app-footer__menu > li {
+    padding: 0 15px 10px 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__menu > li {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__menu > li {
+        padding: 0 0 10px 25px;
+    }
+}
+
+.app-footer__menu a {
+    color: #474747;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.app-footer__menu > li > a:hover,
+.app-footer__menu > li.active > a{
+    color: #ff2a6b;
+}
+
+.app-footer__menu > li.active > a{
+    font-weight: 700;
+}
+
+/* Tablet */
+@media only screen and (min-width: 992px) {
+    .app-footer__right > p {
+        font-size: 13px;
+    }
+}
+
+.app-footer__right > p a {
+    color: #007bff;
+}
+
+.app-footer__right > p a:hover {
+    color: #0056b3;
+}
+
+/********** Scroll-to-top button ************/
+
+button#scrollButton {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: #33e62d;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+button#scrollButton:hover {
+    opacity: 0.7;   
+}
+
+     </style>
+
+     <style>
+
+     /*********************** Homepage **********************/
+
+/* Hero Section */
+.hero {
+    background-image: url(../images/slider-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.hero__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.hero__content span{
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+
+    color: #ffffff;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hero__content h1 span{
+    background-color: #3ad625;
+    font-size: 36px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__content h1 span{
+        font-size: 72px;
+    }
+}
+
+.hero__content h2 span {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+
+    background-color: #fdc856;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__content h2 span {
+        padding: 0 25px;
+        font-size: 48px;
+    }
+}
+
+.hero__content h3 span {
+    background-color: #bdde64;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__content h3 span {
+        font-size: 36px;
+    }
+}
+
+.hero__content > h1 {
+    animation: rotateZoom 1s ease-out both;
+}
+
+.hero__content > h2 {
+    animation: animate 1s ease-out 0.5s both;
+}
+
+.hero__content > h3 {
+    animation: animate 1s ease-out 1s both;
+}
+
+@keyframes rotateZoom {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    1% {
+        opacity: 0;
+        transform: rotate(5deg) scale(0.1, 0.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(5deg) scale(1, 1);
+    }
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/********** Recipes-rating section start **********/
+
+/***** Top rated recipes column, Most liked recipes *****/
+
+.recipes-rating {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #f4f7fb;
+}
+
+.recipes-rating__col {
+    padding-top: 20px;
+}
+
+h2.recipes-rating__title {
+    position: relative;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2.recipes-rating__title::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+
+    width: 50px;
+    height: 6px;
+    margin-bottom: 10px;
+
+    background-color: #5cff2a;
+}
+
+h2.recipes-rating__title::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50px;
+
+    width: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #31ff2a transparent transparent #0cdd1e;
+}
+
+ul.recipes-rating__top > li,
+ul.recipes-rating__liked > li {
+    padding-bottom: 15px;
+}
+
+.recipes-rating__list-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.recipes-rating__image img {
+    width: 80px;
+    height: 80px;
+}
+
+.recipes-rating__info {
+    padding-left: 15px;
+}
+
+.recipes-rating__date {
+    color: #ff2a6b;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.recipes-rating__name {
+    color: #474747;
+    font-size: 16px;
+}
+
+ul.recipes-rating__stars {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 10px;
+}
+
+ul.recipes-rating__stars > li {
+    padding-right: 3px;
+}
+
+.recipes-rating__stars i {
+    color: #fbb710;
+    font-size: 11px;
+}
+
+.recipes-rating__stars > li:last-child i {
+    color: #e0e3e4;
+}
+
+/***** Blog recipes rating *****/
+
+.recipes-rating__blog {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+
+    box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
+}
+
+.recipes-rating__blog-image {
+    position: relative;
+}
+
+.recipes-rating__blog-image::before {
+    content: "May 04, 2018";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 140px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff2a6b;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.recipes-rating__blog-image::after {
+    content: "";
+    position: absolute;
+    left: 140px;
+    top: 0;
+
+    width: 0;
+    border-width: 25px 15px;
+    border-style: solid;
+    border-color: #ff2a6b transparent transparent #ff2a6b;
+}
+
+.recipes-rating__blog-image img {
+    width: 100%;
+}
+
+.recipes-rating__content {
+    padding: 40px;
+}
+
+.recipes-rating__heading {
+    color: #474747;
+    font-size: 18px;
+}
+
+.recipes-rating__author {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color: #ff2a6b;
+    font-weight: 500;
+}
+
+.recipes-rating__description {
+    line-height: 2;
+}
+
+.recipes-rating__comments {
+    padding-top: 20px;
+    color: #474747;
+    font-size: 12px;
+}
+
+.recipes-rating__icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff2a6b;
+}
+
+.recipes-rating__icon i {
+    color: #fff;
+    font-size: 20px;
+}
+
+/**************** Testimonials section start *************/
+
+.testimonials {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fdc856;
+}
+
+.testimonials__container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials__container {
+        max-width: 480px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .testimonials__container {
+        max-width: 1140px;
+    }
+}
+
+.testimonials [class^="col"] {
+    padding: 15px;
+}
+
+.testimonials__bg {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: #fff;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials__bg {
+        flex-flow: row nowrap;
+        padding: 0;
+    }
+}
+
+.testimonials__image {
+    position: relative;
+    width: 50%;
+}
+
+.testimonials__image::before {
+    content: "May 04, 2018";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 90px;
+    height: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: #ff2a6b;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.testimonials__image::after {
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 0;
+
+    width: 0;
+    border-width: 18px 10px;
+    border-style: solid;
+    border-color: #ff2a6b transparent transparent #ff2a6b;
+}
+
+.testimonials__image img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.testimonials__content {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials__image {
+        width: 33.333333%;
+    }
+
+    .testimonials__content {
+        width: 66.666667%;
+        padding-left: 30px;
+        text-align: left;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .testimonials__content {
+        padding-top: 0;
+    }
+}
+
+.testimonials__date {
+    color: #ff2a6b;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.testimonials__title {
+    color: #474747;
+    font-size: 16px;
+}
+
+ul.testimonials__rating {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.testimonials__rating {
+        justify-content: flex-start;
+    }
+}
+
+ul.testimonials__rating > li {
+    padding-right: 3px;
+}
+
+ul.testimonials__rating i {
+    color: #fbb710;
+    font-size: 11px;
+}
+
+ul.testimonials__rating > li:last-child i {
+    color: #e0e3e4;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials__author {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+.testimonials__avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials__avatar {
+        width: 10%;
+    }
+}
+
+.testimonials__name {
+    align-self: center;
+    padding-left: 15px;
+}
+
+     </style>
+
+     <style>
+
+      /**************** Reset CSS main *****************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #838383;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+p {
+    color: #838383;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+     </style>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animate Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- CSS Stylesheets  -->
+    <link rel="stylesheet" href="css/grid/container.css">
+    <link rel="stylesheet" href="css/grid/row.css">
+    <link rel="stylesheet" href="css/grid/col.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header>
+        <!-- Top-bar section start -->
+        <section class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="top-bar__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar__links">
+                            <a href="#">Register</a>
+                            <span>/</span>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Top-bar section end -->
+
+        <!-- Navigation section start -->
+        <nav class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-2 col-lg-2">
+                        <a href="index.html" class="top-nav___link-logo">
+                            <img class="top-nav__logo" src="./images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-9 col-lg-8">
+                        <ul class="top-nav__menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                            <li class="active"><a href="#">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 col-md-1 col-lg-2">
+                        <div class="top-nav__search">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="top-nav__toggle" id="showMenu">
+                            <div class="top-nav__toggle-bars">
+                                <div class="top-nav__toggle-bar" id="barTop"></div>
+                                <div class="top-nav__toggle-bar" id="hideBar"></div>
+                                <div class="top-nav__toggle-bar" id="barBottom"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="top-nav__menu-toggle" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation section end -->
+    </header>
+    <!-- Header section end -->
+
+    <main>
+        <!-- Hero section start -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+            <h1 class="hero__title">About us</h1>
+            </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- About section start -->
+        <section class="about" style="overflow-x: hidden;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="0">
+                        <div class="about__content">
+                            <h2 class="about__title">About our great team</h2>
+                            <p class="about__description">Thank you very much. Or are they the result of the body by right, the pleasures of the duties of that wise man who chooses them here? For no one will succeed in all the laborious pleasures of the body. This pardon, having released our duties as if he hates his truth with desire and pain, I will open myself to the pleasures of following the softness. When we lead, they do not know how to do what is right, and no pleasure can be blamed for it. He wants flattery that, blessed, the pain of the accusers with the labor of finding, others to refuse the least of our pains.
+</p>
+                            <div class="about__link">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="150">
+                        <img class="about__thumbnail" src="./images/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section end -->
+
+        <!-- Facts section start -->
+        <section class="facts" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0">
+            <div class="container">
+                <ul class="facts__list-items">
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0">
+                        <div class="fact-item">
+                            <img class="fact-item__image" src="./images/icon/1.png" alt="">
+                            <h2 class="fact-item__big-number">98</h2>
+                            <p class="fact-item__name">Amazing Receipies</p>
+                        </div>
+                    </li>
+
+                    
+
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300">
+                        <div class="fact-item">
+                            <img class="fact-item__image" src="./images/icon/3.png" alt="">
+                            <h2 class="fact-item__big-number">47</h2>
+                            <p class="fact-item__name">Meat Receipies</p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="450">
+                        <div class="fact-item">
+                            <img class="fact-item__image" src="./images/icon/4.png" alt="">
+                            <h2 class="fact-item__big-number">26</h2>
+                            <p class="fact-item__name">Desert receipies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Facts section end -->
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+        <section class="app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="app-footer__logo-wrapper">
+                            <img src="images/logo.svg" alt="">
+                        </div>
+                        <ul class="app-footer__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="app-footer__right">
+                            <ul class="app-footer__menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                                <li class="active"><a href="#">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <p>Copyright © 2024 All rights reserved | This template is made with <i
+                                    class="far fa-heart"></i> by <a href="#">The Masterchefs</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll-to-top button start -->
+    <div class="scroll-to-top">
+        <button id="scrollButton">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+    <!-- Scroll-to-top button end -->
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out',
+            duration: 600,
+            once: true
+        });
+    </script>
+</body>
+</html>
